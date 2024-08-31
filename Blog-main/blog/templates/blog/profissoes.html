@@ -1,0 +1,19 @@
+{% extends "blog/base.html" %}
+{% load static %}
+{% block content %}
+<h1>Minhas profissões</h1>
+
+<div class="row d-flex justify-content-center">
+  {% for profissoes in profissoes %}
+    <div class="col-md-4 col-sm-6 mb-4">
+      <div class="card h-100">
+        <img src="{{ profissoes.imagem.url }}" class="card-img-top" alt="{{ profissoes.nome }}">
+        <div class="card-body">
+          <h5 class="card-title">{{ profissoes.nome }}</h5>
+          <p class="card-text">{{ profissoes.descricao }}</p>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+{% endblock %}

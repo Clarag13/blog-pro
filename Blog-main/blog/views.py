@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Hobbies, SeriesFavoritas
+from .models import *
 
 def index(request):
     return render(request, 'blog/index.html')
@@ -7,16 +7,16 @@ def index(request):
 def sobre(request):
     return render(request, 'blog/sobre.html')
 
-def hobbies(request):
-    lista_hobbies = Hobbies.objects.all()
+def profissoes(request):
+    lista_profissoes = profissoes.objects.all()
     context = {
-        'hobbies': lista_hobbies
+        'profissoes': lista_profissoes
     }
-    return render(request, 'blog/hobbies.html', context)
+    return render(request, 'blog/profissoes.html', context)
 
-def series(request):
-    series = SeriesFavoritas.objects.all()
+def passatempos(request):
+    passatempos = Passatempos.objects.all()
     context = {
-        'series': series
+        'passatempos': passatempos
     }
-    return render(request, 'blog/series.html', context)
+    return render(request, 'blog/passatempos.html', context)

@@ -1,11 +1,11 @@
 from django.contrib import admin
-from .models import Hobbies, SeriesFavoritas
+from .models import Profissoes, Passatempos
 
-@admin.register(Hobbies)
-class HobbiesModelAdmin(admin.ModelAdmin):
+@admin.register(Profissoes)
+class ProfissoesModelAdmin(admin.ModelAdmin):
     list_display = ['nome', 'inicio', 'descricao']
 
 
-@admin.register(SeriesFavoritas)
-class HobbiesModelAdmin(admin.ModelAdmin):
+@admin.register(Passatempos)
+class PassatemposModelAdmin(admin.ModelAdmin):
     list_display = ['nome', 'inicio', 'descricao']

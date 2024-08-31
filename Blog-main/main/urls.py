@@ -8,8 +8,8 @@ from blog import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
-    path('hobbies/', views.hobbies, name='hobbies'),
-    path('series/', views.series, name='series'),
+    path('profissoes/', views.profissoes, name='profissoes'),
+    path('passatempos/', views.passatempos, name='passatempos'),
     path('sobre/', views.sobre, name='sobre'),
 ]
 
