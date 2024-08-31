@@ -1,0 +1,19 @@
+{% extends "blog/base.html" %}
+{% load static %}
+{% block content %}
+<h1>Meus Hobbies</h1>
+
+<div class="row d-flex justify-content-center">
+  {% for hobbie in hobbies %}
+    <div class="col-md-4 col-sm-6 mb-4">
+      <div class="card h-100">
+        <img src="{{ hobbie.imagem.url }}" class="card-img-top" alt="{{ hobbie.nome }}">
+        <div class="card-body">
+          <h5 class="card-title">{{ hobbie.nome }}</h5>
+          <p class="card-text">{{ hobbie.descricao }}</p>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+{% endblock %}

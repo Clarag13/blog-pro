@@ -1,0 +1,17 @@
+{% extends "blog/base.html" %}
+{% load static %}
+{% block content %}
+<div class="row d-flex justify-content-center">
+  <div class="col-4">
+    <h1>Sobre</h1>
+
+    <div class="card" style="width: 24rem;">
+      <img src="{% static "img/eu.jpeg" %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Ola, me chamo Camille</h5>
+        <p class="card-text">Sou estudante de Informatica no IFRN Campus Pau dos Ferros. Adoro passar tempo na natureza, seja caminhando entre as árvores ou praticando atividades físicas ao ar livre. Também gosto de jogar vôlei, tanto na quadra quanto na praia, e me sinto motivado com o espírito de equipe e a competição. Nas horas de lazer, gosto de assistir a séries como The Vampire Diaries, The 100 e Narcos, que me prendem com seus enredos envolventes e personagens complexos. Essas atividades e hobbies me ajudam a manter o equilíbrio entre corpo e mente.</p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

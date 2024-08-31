@@ -1,0 +1,21 @@
+{% extends "blog/base.html" %}
+{% load static %}
+{% block content %}
+<div class="row d-flex justify-content-center">
+  <div class="col-4">
+    <h1>Ola</h1>
+
+    <div class="card" style="width: 20rem;">
+      <img src="{% static "img/eu.jpeg" %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Ola, eu sou Camille</h5>
+        <p class="card-text">Amo praticar esportes, assistir series e dormir de baixo da mesa no corredor do terceiro piso</p>
+        <div class="d-flex">
+          <a href="{% url "hobbies" %}" class="btn btn-secondary">Veja mais sobre meus hobbies</a>
+          <a href="{% url "series" %}" class="btn btn-primary">Veja mais sobre minhas serias favoritas</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
